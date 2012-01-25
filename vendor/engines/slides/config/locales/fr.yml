@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    slides:
+      title: Slides
+  admin:
+    slides:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Slide
+        reorder: Réordonner les Slides
+        reorder_done: Fin de réordonnancement des Slides
+      records:
+        title: Slides
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Slide. Cliquer sur "Créer un(e) nouve(au/l/lle) Slide" pour créer votre premi(er/ère) slide.'
+      slide:
+        view_live_html: Voir ce(t/tte) slide <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) slide
+        delete: Supprimer définitivement ce(t/tte) slide
+  slides:
+    show:
+      other: Autres Slides

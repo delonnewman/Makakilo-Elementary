@@ -1,0 +1,33 @@
+<% content_for :body_content_title do %>
+  <%= @slide.text %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @slide.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Text</h1>
+    <p>
+      <%=raw @slide.text %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="slides">
+      <% @slides.each do |slide| %>
+        <li>
+          <%= link_to slide.text, slide_path(slide) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

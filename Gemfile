@@ -78,3 +78,5 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-staff_members', '1.0', :path => 'vendor/engines'
 
 gem 'refinerycms-links', '1.0', :path => 'vendor/engines'
+
+gem 'refinerycms-slides', '1.0', :path => 'vendor/engines'

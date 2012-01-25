@@ -2,7 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: url(../images/bg.png) top left repeat;
-  font-family: 'Poly', serif;
+  font-family: 'Poly', 'Garamond', serif;
 }
 
 a, h1, h2, strong { color: #005dad }
@@ -208,7 +208,7 @@ a, h1, h2, strong { color: #005dad }
 
 #slides ul.pagination {
 	margin: 10px auto 0;
-	width:100px;
+	width: 100px;
 }
 
 #slides ul.pagination li {
@@ -240,7 +240,7 @@ a, h1, h2, strong { color: #005dad }
 	height: 50px;
 	padding: 0 20px 0 20px;
 	background: rgba(0,0,0,.5);
-	width: 540px;
+	width: 300px;
 	font-size: 1em;
 	line-height: 1.33;
 	color: #fff;

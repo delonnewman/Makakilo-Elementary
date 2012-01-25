@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    slides:
+      title: Slides
+  admin:
+    slides:
+      actions:
+        create_new: Lag en ny Slide
+        reorder: Endre rekkefølgen på Slides
+        reorder_done: Ferdig å endre rekkefølgen Slides
+      records:
+        title: Slides
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Slides enda. Klikk på "Lag en ny Slide" for å legge til din første slide.
+      slide:
+        view_live_html: Vis hvordan denne slide ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne slide
+        delete: Fjern denne slide permanent
+  slides:
+    show:
+      other: Andre Slides

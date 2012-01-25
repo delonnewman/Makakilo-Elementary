@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    slides:
+      title: Slides
+  admin:
+    slides:
+      actions:
+        create_new: Maak een nieuwe Slide
+        reorder: Wijzig de volgorde van de Slides
+        reorder_done: Klaar met het wijzingen van de volgorde van de Slides
+      records:
+        title: Slides
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Slides. Druk op 'Maak een nieuwe Slide' om de eerste aan te maken.
+      slide:
+        view_live_html: Bekijk deze slide op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze slide
+        delete: Verwijder deze slide voor eeuwig
+  slides:
+    show:
+      other: Andere Slides

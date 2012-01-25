@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    slides:
+      title: Slides
+  admin:
+    slides:
+      actions:
+        create_new: CREATE NEW Slide
+        reorder: REORDR Slides
+        reorder_done: DUN REORDERIN Slides
+      records:
+        title: Slides
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Slides YET. CLICK "CREATE NEW Slide" 2 ADD UR FURST slide.
+      slide:
+        view_live_html: VIEW DIS slide LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS slide
+        delete: REMOOV DIS slide FOREVR
+  slides:
+    show:
+      other: OTHR Slides

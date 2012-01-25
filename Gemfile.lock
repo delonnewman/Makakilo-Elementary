@@ -2,6 +2,7 @@ PATH
   remote: vendor/engines
   specs:
     refinerycms-links (1.0)
+    refinerycms-slides (1.0)
     refinerycms-staff_members (1.0)
 
 GEM
@@ -169,6 +170,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 1.0.0)
   refinerycms-links (= 1.0)!
   refinerycms-news (~> 1.2)
+  refinerycms-slides (= 1.0)!
   refinerycms-staff_members (= 1.0)!
   rmagick
   sqlite3

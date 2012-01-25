@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="slides">
+    <% @slides.each do |slide| %>
+      <li>
+        <%= link_to slide.text, slide_path(slide) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

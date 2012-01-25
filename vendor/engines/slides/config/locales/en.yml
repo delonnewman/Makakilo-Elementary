@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    slides:
+      title: Slides
+  admin:
+    slides:
+      actions:
+        create_new: Add New Slide
+        reorder: Reorder Slides
+        reorder_done: Done Reordering Slides
+      records:
+        title: Slides
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Slides yet. Click "Add New Slide" to add your first slide.
+      slide:
+        view_live_html: View this slide live <br/><em>(opens in a new window)</em>
+        edit: Edit this slide
+        delete: Remove this slide forever
+  slides:
+    show:
+      other: Other Slides
