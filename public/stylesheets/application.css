@@ -269,7 +269,7 @@ a, h1, h2, strong { color: #005dad }
 
 #slides .caption {
   z-index: 500;
-  position: relative;
+  position: absolute;
   top: 247px;
   left: 0;
   height: 50px;

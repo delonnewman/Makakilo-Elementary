@@ -1,4 +1,4 @@
-require File.expand_path('../config/application', __FILE__)
+#require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 Site::Application.load_tasks
