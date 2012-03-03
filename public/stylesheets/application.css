@@ -283,6 +283,10 @@ a, h1, h2, strong { color: #005dad }
   text-shadow: none;
 }
 
+.slide a {
+	color:none !important;
+} 
+
 .slides_container div.slide {
   width: 300px;
   height: 333px;
