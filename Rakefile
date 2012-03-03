@@ -1,4 +1,4 @@
-#require File.expand_path('../config/application', __FILE__)
+require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 Site::Application.load_tasks
@@ -76,7 +76,7 @@ namespace :deploy do
   task :live do
     cmds = %{
       cd #{PATH} &&
-      #git pull &&
+      git pull &&
       bundle install --deployment &&
       rake db:migrate RAILS_ENV=production
       #rake db:load_dump RAILS_ENV=production
@@ -84,7 +84,7 @@ namespace :deploy do
     }
 
     #sh "rake db:dump && scp #{DB_DUMP} #{USER}@#{HOST}:#{PATH}/#{DB_DUMP}" 
-    sh "git push && ssh -t #{USER}@#{HOST} '#{cmds}'"
+    sh "ssh -t #{USER}@#{HOST} '#{cmds}'"
   end
 end
 
