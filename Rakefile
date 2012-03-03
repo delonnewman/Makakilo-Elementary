@@ -76,7 +76,7 @@ namespace :deploy do
   task :live do
     cmds = %{
       cd #{PATH} &&
-      git pull &&
+      #git pull &&
       bundle install --deployment &&
       rake db:migrate RAILS_ENV=production
       #rake db:load_dump RAILS_ENV=production
