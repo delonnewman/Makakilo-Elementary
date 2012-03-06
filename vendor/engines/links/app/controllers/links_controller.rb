@@ -20,7 +20,9 @@ class LinksController < ApplicationController
 protected
 
   def find_all_links
-    @links = Link.order('position ASC')
+    @links   = Link.order('position ASC')
+    @parents = @links.where(:link_type => Link::LinkTypes::PARENTS)
+    @kids    = @links.where(:link_type => Link::LinkTypes::KIDS)
   end
 
   def find_page

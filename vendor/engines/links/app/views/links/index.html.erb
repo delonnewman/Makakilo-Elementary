@@ -1,11 +1,29 @@
 <% content_for :body_content_left do %>
-  <ul id="links">
-    <% @links.each do |link| %>
-      <li>
-      <%= link_to link.title, link.url, :target => "__#{link.title.gsub(/\s+/, '_').downcase}" %>
-      </li>
+    <h3>Links for Parents</h3>
+    <% if @parents.empty? %>
+      There are no links for parents.
+    <% else %>
+      <ul id="links">
+        <% @parents.each do |link| %>
+          <li>
+          <%= link_to link.title, link.url, :target => "__#{link.title.gsub(/\s+/, '_').downcase}" %>
+          </li>
+        <% end %>
+      </ul>
     <% end %>
-  </ul>
+
+    <h3>Links for Kids</h3>
+    <% if @kids.empty? %>
+      There are no links for kids.
+    <% else %>
+      <ul id="links">
+        <% @kids.each do |link| %>
+          <li>
+          <%= link_to link.title, link.url, :target => "__#{link.title.gsub(/\s+/, '_').downcase}" %>
+          </li>
+        <% end %>
+    </ul>
+  <% end %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>

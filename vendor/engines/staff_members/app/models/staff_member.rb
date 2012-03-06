@@ -1,5 +1,5 @@
 class StaffMember < ActiveRecord::Base
-  GRADES      = %w{ K 1 2 3 4 5 }
+  GRADES      = %w{ SPED K 1 2 3 4 5 }
   STAFF_TYPES = %w{ Administration Teacher }
 
   module StaffTypes

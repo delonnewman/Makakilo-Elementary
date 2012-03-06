@@ -4,14 +4,19 @@
           :include_object_name => true
         } %>
   
-  <div class='field'>
+  <div class="field">
     <%= f.label :title -%>
     <%= f.text_field :title, :class => 'larger widest'  -%>
   </div>
   
-  <div class='field'>
+  <div class="field">
     <%= f.label :url -%>
     <%= f.text_field :url  -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :link_type -%>
+    <%= f.select :link_type, @link_types -%>
   </div>
   
   <%= render :partial => "/shared/admin/form_actions",
