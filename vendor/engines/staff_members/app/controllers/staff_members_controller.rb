@@ -30,7 +30,7 @@ class StaffMembersController < ApplicationController
     @staff_members = find_all_teachers
 
     if grade = params[:grade]
-      @staff_members = @staff_members.where(:grade => grade.to_i)
+      @staff_members = @staff_members.where(:grade => grade)
     end
 
     @grades = StaffMember::GRADES
