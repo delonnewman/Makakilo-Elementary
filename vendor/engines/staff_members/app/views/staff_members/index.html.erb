@@ -9,7 +9,7 @@
       <%= link_to 'Teachers', { :action => 'teachers' }, { :class => "current" } %>
       Grades:
       <% @grades.each do |grade| %>
-        <% if params[:grade].to_i == grade %>
+        <% if params[:grade] == grade %>
           <em class="current"><%= grade %></em>
         <% else %>
           <%= link_to grade, "/staff_members/teachers/grade-#{grade}" %>
