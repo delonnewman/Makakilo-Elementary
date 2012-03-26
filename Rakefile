@@ -119,3 +119,8 @@ namespace :db do
     end
   end
 end
+
+desc "setup development environment"
+task :setup do
+    sh "sudo apt-get install #{PKGS} && bundle install"
+end
